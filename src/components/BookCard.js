@@ -1,15 +1,18 @@
 import BookInfo from './BookInfo';
-import fetchData from './fetchData';
 
-const BookCard = () => {
- 
+const BookCard = ({data}) => {
     return (  
-        <>
-            <div> 
-                
-           </div>
-            <BookInfo />
-        </>
+        data.map((book, i) => {
+            return (
+                <div className="image-card" key={i}>
+                    <img src={book.volumeInfo.canonicalVolumeLink}></img>
+                </div>
+            )
+        })
+        // <>
+        //     <BookInfo />
+        // </>
+        
     );
 }
  

@@ -1,10 +1,11 @@
 import SearchBar from './SearchBar';
 
-const Header = () => {
+const Header = ({data}) => {
+    // console.log(data)
     return ( 
         <header>
             <h1>This is header</h1>
-            <SearchBar />
+            <SearchBar data= {data} />
         </header>
     );
 }
