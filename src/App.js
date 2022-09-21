@@ -1,12 +1,16 @@
+import React, { Component } from 'react'
 import { Header, Cards } from './components/index';
 
-function App() {
-  return (
-    <>
-      <Header />
-      <Cards />
-    </>
-  );
+export default class App extends Component {
+  state = {
+    data:[]
+  };
+  render() {
+    return (
+      <>
+        <Header />
+        <Cards />
+      </>
+    )
+  }
 }
-
-export default App;
