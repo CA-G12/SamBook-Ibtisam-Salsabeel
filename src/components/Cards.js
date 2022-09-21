@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
-import VideoCard from './VideoCard';
+import BookCard from './BookCard';
 
 export default class Cards extends Component {
   render() {
     return (
       <div>
-        <VideoCard />
+        <BookCard />
       </div>
     )
   }
