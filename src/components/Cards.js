@@ -15,9 +15,9 @@ export default class Cards extends Component {
   
   render() {
     return (
-      <div>
-        <BookCard data = {this.state.data}/>
-      </div>
+      this.state.data.map(item =>{
+          return  <BookCard data = {item} key={item.id}/>
+      })
     )
   }
 }

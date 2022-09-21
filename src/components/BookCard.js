@@ -1,19 +1,13 @@
 import BookInfo from './BookInfo';
 
 const BookCard = ({data}) => {
-    return (  
-        data.map((book, i) => {
             return (
-                <div className="image-card" key={i}>
-                    <img src={book.volumeInfo.canonicalVolumeLink}></img>
+   
+                <div className="image-card" >
+                    <img src={data.volumeInfo.imageLinks.smallThumbnail} alt='image'/>
                 </div>
             )
-        })
-        // <>
-        //     <BookInfo />
-        // </>
-        
-    );
-}
+  
+            }
  
 export default BookCard;
