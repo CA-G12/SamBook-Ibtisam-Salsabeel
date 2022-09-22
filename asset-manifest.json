@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/SamBook-Ibtisam-Salsabeel/static/css/main.3b301411.css",
-    "main.js": "/SamBook-Ibtisam-Salsabeel/static/js/main.bdfe72b9.js",
+    "main.css": "/SamBook-Ibtisam-Salsabeel/static/css/main.fcc2748c.css",
+    "main.js": "/SamBook-Ibtisam-Salsabeel/static/js/main.bfc78bfb.js",
     "static/js/787.0a9f094e.chunk.js": "/SamBook-Ibtisam-Salsabeel/static/js/787.0a9f094e.chunk.js",
     "static/media/index.png": "/SamBook-Ibtisam-Salsabeel/static/media/index.7f035c0004fc61d1bfd9.png",
     "index.html": "/SamBook-Ibtisam-Salsabeel/index.html",
-    "main.3b301411.css.map": "/SamBook-Ibtisam-Salsabeel/static/css/main.3b301411.css.map",
-    "main.bdfe72b9.js.map": "/SamBook-Ibtisam-Salsabeel/static/js/main.bdfe72b9.js.map",
+    "main.fcc2748c.css.map": "/SamBook-Ibtisam-Salsabeel/static/css/main.fcc2748c.css.map",
+    "main.bfc78bfb.js.map": "/SamBook-Ibtisam-Salsabeel/static/js/main.bfc78bfb.js.map",
     "787.0a9f094e.chunk.js.map": "/SamBook-Ibtisam-Salsabeel/static/js/787.0a9f094e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3b301411.css",
-    "static/js/main.bdfe72b9.js"
+    "static/css/main.fcc2748c.css",
+    "static/js/main.bfc78bfb.js"
   ]
 }
