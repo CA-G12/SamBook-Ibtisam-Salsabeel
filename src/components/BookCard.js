@@ -20,15 +20,17 @@ const obj={
    }
 
   return volumeInfo.imageLinks ? (
-    <div className="image-card" >
-      <img src={volumeInfo.imageLinks.smallThumbnail} alt="api pgo" onClick={()=>{
-       setShow({display:'block'})
-      }}  />
-      <p className="title-card">{volumeInfo.title.slice(0,20)}</p>
+    <>
+      <div className="image-card" >
+        <img src={volumeInfo.imageLinks.smallThumbnail} alt="api pgo" onClick={()=>{
+        setShow({display:'block'})
+        }}  />
+        <p className="title-card">{volumeInfo.title.slice(0,20)}</p>
+      </div>
       <section style={showPop} className='book-pop'>
         <BookInfo  handleClose={handleClose} obj={obj} showPop={showPop}/>
       </section>
-    </div>
+    </>
   ) : null;
 };
 
