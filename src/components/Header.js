@@ -8,7 +8,7 @@ const Header = ({ data, handleSearchValue }) => {
         <h1 className='logo-nav'>Readly</h1>
         <SearchBar data={data} handleSearchValue={handleSearchValue} />
         <div className="categories">
-          <i class="fa-solid fa-bars"></i>
+          <i className="fa-solid fa-bars"></i>
           Categories
         </div>   
       </nav>

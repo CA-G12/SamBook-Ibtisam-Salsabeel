@@ -10,7 +10,7 @@ const BookInfo = ({ obj, handleClose, showPop }) => {
     description,
   } = obj;
   return (
-    <section className="book-pop">
+    < >
       <div className="pop-container">
         <img src={thumbnail} alt="book" className="book-img" />
       </div>
@@ -41,7 +41,7 @@ const BookInfo = ({ obj, handleClose, showPop }) => {
         <span>Page Count : {pageCount} </span>
         <span>Published Date : {publishedDate} </span>
       </div>
-    </section>
+    </>
   );
 };
 
