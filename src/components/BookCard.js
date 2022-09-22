@@ -1,9 +1,32 @@
+import { useState } from "react";
 import BookInfo from "./BookInfo";
 
-const BookCard = ({ data }) => {
-  return data.volumeInfo.imageLinks ? (
-    <div className="image-card">
-      <img src={data.volumeInfo.imageLinks.smallThumbnail} alt="image" />
+
+const BookCard = ({ data:{volumeInfo} }) => {
+  const [showPop,setShow]=useState({display:'none'});
+  const handleClose= ()=>{
+    setShow({display:'none'})
+  }
+
+const obj={
+    thumbnail :volumeInfo.imageLinks.thumbnail,
+    previewLink:volumeInfo.previewLink,
+    pageCount:volumeInfo.pageCount,
+    publishedDate:volumeInfo.publishedDate,
+    title:volumeInfo.title,
+    authors:volumeInfo.authors,
+    publisher:volumeInfo.publisher,
+    description:volumeInfo.description,
+   }
+
+  return volumeInfo.imageLinks ? (
+    <div className="image-card" >
+      <img src={volumeInfo.imageLinks.smallThumbnail} alt="api pgo" onClick={()=>{
+       setShow({display:'block'})
+      }}  />
+      <div style={showPop}>
+      <BookInfo  handleClose={handleClose} obj={obj} showPop={showPop}/>
+      </div>
     </div>
   ) : null;
 };
