@@ -1,21 +1,35 @@
-import React, { Component } from 'react'
-import { Header, Cards } from './components/index';
-import fetchData from './components/fetchData';
-
+import React, { Component } from "react";
+import { Header, Cards } from "./components/index";
+import fetchData from "./components/fetchData";
 export default class App extends Component {
   state = {
-    data:[]
+    data: [],
+    searchValue: "Culture",
   };
 
-  componentDidMount(){
-
+  componentDidMount() {
+    fetchData(this.state.searchValue).then((response) =>
+      this.setState({ data: response.items })
+    );
   }
+
+  handleSearchValue = (e) => {
+    if (e.target.value.trim() !== "") {
+      this.setState({ searchValue: e.target.value });
+      fetchData(this.state.searchValue).then((response) =>
+        this.setState({ data: response.items })
+      );
+    } else {
+      alert("empty not vaild");
+    }
+  };
+
   render() {
     return (
       <>
-        <Header data = {this.state.data} />
-        <Cards />
+        <Header data={this.state} handleSearchValue={this.handleSearchValue} />
+        <Cards data={this.state} />
       </>
-    )
+    );
   }
 }
