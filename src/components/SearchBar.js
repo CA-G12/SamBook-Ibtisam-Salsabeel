@@ -1,14 +1,16 @@
 import React from "react";
 
 export default function SearchBar(props) {
+  console.log(props);
   return (
     <div>
       <input
         type="text"
         onKeyPress={(e) => {
-          if (e.key === "enter") props.handleSearchValue(e);
+          if (e.key === "Enter") {
+            props.handleSearchValue(e)};
         }}
-        defaultValue={this.props.data.searchValue}
+        defaultValue={props.data.searchValue}
       />
     </div>
   );
