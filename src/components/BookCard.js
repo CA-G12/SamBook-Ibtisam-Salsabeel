@@ -24,6 +24,7 @@ const obj={
       <img src={volumeInfo.imageLinks.smallThumbnail} alt="api pgo" onClick={()=>{
        setShow({display:'block'})
       }}  />
+      <p className="title-card">{data.volumeInfo.title.slice(0,20)}</p>
       <div style={showPop}>
       <BookInfo  handleClose={handleClose} obj={obj} showPop={showPop}/>
       </div>
