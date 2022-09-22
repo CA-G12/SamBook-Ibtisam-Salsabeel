@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/SamBook-Ibtisam-Salsabeel/static/css/main.e6c13ad2.css",
+    "main.js": "/SamBook-Ibtisam-Salsabeel/static/js/main.ee7df30d.js",
+    "static/js/787.0a9f094e.chunk.js": "/SamBook-Ibtisam-Salsabeel/static/js/787.0a9f094e.chunk.js",
+    "index.html": "/SamBook-Ibtisam-Salsabeel/index.html",
+    "main.e6c13ad2.css.map": "/SamBook-Ibtisam-Salsabeel/static/css/main.e6c13ad2.css.map",
+    "main.ee7df30d.js.map": "/SamBook-Ibtisam-Salsabeel/static/js/main.ee7df30d.js.map",
+    "787.0a9f094e.chunk.js.map": "/SamBook-Ibtisam-Salsabeel/static/js/787.0a9f094e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.ee7df30d.js"
+  ]
+}
