@@ -4,8 +4,14 @@ const Header = ({ data, handleSearchValue }) => {
     
   return (
     <header>
-      <h1>This is header</h1>
-      <SearchBar data={data} handleSearchValue={handleSearchValue} />
+      <nav>
+        <h1 className='logo-nav'>Readly</h1>
+        <SearchBar data={data} handleSearchValue={handleSearchValue} />
+        <div className="categories">
+          <i class="fa-solid fa-bars"></i>
+          Categories
+        </div>   
+      </nav>
     </header>
   );
 };

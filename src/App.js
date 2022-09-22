@@ -1,6 +1,8 @@
 import React, { Component } from "react";
-import { Header, Cards } from "./components/index";
+import { Header, Cards, IndexSection } from "./components/index";
 import fetchData from "./components/fetchData";
+import './index.css'
+
 export default class App extends Component {
   state = {
     data: [],
@@ -28,7 +30,10 @@ export default class App extends Component {
     return (
       <>
         <Header data={this.state} handleSearchValue={this.handleSearchValue} />
-        <Cards data={this.state} />
+        <IndexSection />
+        <section className="cards-section" id="nav">
+          <Cards data={this.state} />
+        </section>
       </>
     );
   }

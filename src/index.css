@@ -1,3 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&family=Roboto&family=Roboto+Slab&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', "Courgette", 'Times New Roman', Times, serif;
+}
+
+:root {
+    --navy: #003060;
+    --orange: #e55b13;
+    --yellow: #f8c625;
+    --brown: #a47551;
+    --beige: #e9dccb;
+    --light-beige: #f6eee0;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +28,164 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+                                /* Start Styling Landing Page */
+
+/* Start Styling Nav Bar */
+
+/* header{
+    width: 100%;
+    background-color: var(--light-beige);
+} */
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0% 5%;
+    width: 100%;
+    background-color: var(--light-beige);
+}
+
+.logo-nav {
+    width: 140px;
+    color: var(--orange);
+}
+
+ul.nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+li.nav-item {
+    margin-right: 20px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+a.nav-item-link {
+    text-decoration: none;
+}
+
+/* End Styling Nav Bar */
+
+.btn {
+    padding: 8px 46px;
+    background-color: var(--orange);
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    border: none;
+    margin-top: 7px;
+}
+
+input[type="text"] {
+    height: 60px;
+    width: 40rem;
+    padding: 10px;
+    background-color: #c1b9af21;
+    border-radius: 45px;
+    border: none;
+    height: 54px;
+    font-size: 16px;
+    padding-left: 91px;
+    position: relative;
+}
+
+input[type="text"]:focus-visible {
+    border: 1px solid orange;
+    outline: none;
+}
+
+.searchContainer {
+    height: 74px;
+    display: flex;
+    align-items: center;
+}
+
+.cards-section {
+    display: flex;
+    padding: 2% 5%;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 26px;
+    flex-wrap: wrap;
+}
+
+.image-card{
+    width: 282px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    background-color: #e55b131c;
+    padding: 21px 17px 19px;
+    color: var(--navy);
+    font-weight: bold;
+    font-size: 18px;
+    height: 340px;
+}
+
+.image-card:hover{
+    box-shadow: 0px 0px 24px 2px var(--brown);
+    transform: scale(1.01);
+}
+
+.image-card img{
+    width: 242px;
+    height: 260px;
+    border-radius: 6px;
+}
+
+.categories {
+    display: flex;
+    justify-content: space-between;
+    width: 9%;
+    align-items: center;
+    font-size: 19px;
+    gap: 12px;
+    font-weight: 400;
+    font-weight: bold;
+}
+
+i.fa-solid.fa-bars {
+    color: var(--orange);
+}
+
+i.fa-solid.fa-magnifying-glass {
+    position: absolute;
+    margin-left: 43px;
+}
+
+.index-page {
+    display: flex;
+    padding: 2% 4% 2% 6%;
+    align-items: center;
+    justify-content: space-between;
+    height: 86vh;
+}
+
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    height: 100%;
+    justify-content: center;
+}
+
+p.para-new {
+    max-width: 413px;
+    font-size: 17px;
+}
+
+h1.headline {
+    font-size: 26px;
+    text-transform: capitalize;
+    max-width: 521px;
 }
